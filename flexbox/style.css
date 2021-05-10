@@ -1,0 +1,164 @@
+body {
+    margin: 0;
+}
+.container {
+    border: 6px solid black;
+    display: flex;
+    height: 400px;
+    align-items: flex-end;
+    
+    /***   
+        @start FLEX CONTAINER PROPERTIES 
+    */
+
+    /* display */
+    /* display: flex; */
+    /* display: inline-flex; */
+    /* default */
+    
+    /* Flex direction */
+    /* flex-direction: row; default value*/
+    /* flex-direction: row-reverse; */
+    /* flex-direction: column; */
+    /* flex-direction: column-reverse; */
+    
+    /* Flex wrap */
+    /* flex-wrap: nowrap; default value*/
+    /* flex-wrap: wrap; */
+    /* flex-direction: column; */
+    /* height: 400px; */
+    /* flex-wrap: wrap-reverse; */
+    
+    /* Flex Flow */
+    /* flex-flow: row-reverse wrap; */
+    /* flex-flow: column-reverse wrap-reverse; */
+    
+    /* justify-content use for row*/
+    /* justify-content: flex-start; default value*/
+    /* justify-content: flex-end; */
+    /* justify-content: center; */
+    /* justify-content: space-between; */
+    /* justify-content: space-around; */
+    /* justify-content: space-evenly; */    
+
+    /* justify-content use for column*/
+    /* flex-direction: column;
+    height: 800px; */
+    /* justify-content: flex-start; default value*/
+    /* justify-content: flex-end; */
+    /* justify-content: space-around; */
+    /* justify-content: space-between; */
+    /* justify-content: space-evenly; */
+    /* justify-content: center; */
+
+    /* Align items */
+    /* height: 800px; */
+    /* align-items: stretch;default value */
+    /* align-items: flex-start; */
+    /* align-items: flex-end; */
+    /* align-items: center; */
+    /* flex-direction: column; */
+    /* align-items: baseline; */
+
+    /* Align content */
+    /* height: 800px;
+    flex-wrap: wrap; */
+    /* align-content: stretch; use for stretch */
+    /* align-content: flex-start;  */
+    /* align-content: flex-end;  */
+    /* align-content: center;  */
+    /* align-content: space-between; in between 100px , Edges 50px */
+    /* align-content: space-around;  */
+
+    /***   
+        @end FLEX CONTAINER PROPERTIES 
+    */
+       
+    
+    /***   
+        @start FLEX items PROPERTIES 
+    */
+
+     /**
+       order use for item it is contain integer value , default value -> order: 0;
+    */
+     /**
+       Flex grow use give space in between item,  default value -> flex-grow: 0; 
+    */
+    /** 
+       Flex shrink use for shrink per item in space,  default value -> flex-shrink: 1;
+    */ 
+
+    /**
+       Flex basis use for give space of single item,  default value -> flex-basis: auto;
+    */
+    /** 
+       Flex is shorthand, default value -> flex: 0 1 auto;
+       flex: <flex-grow> <flex-shrink> <flex-basis>;
+    */
+
+    /***   
+        @end FLEX items PROPERTIES 
+    */
+}
+
+.flex-item {
+    color: white;
+    font-size: 1.5rem;
+    padding: 1rem;
+    text-align: center;
+    /* width: 8rem; */
+    /* flex-grow: 1; */
+    /* flex-shrink: 0; */
+}
+.item-1 {
+    background-color: #B4BF35;
+    /* padding-bottom: 3rem; use for baseline */
+    /* flex-grow: 1; */
+    /* flex-basis: auto; */
+    /* flex-basis: 400px; */
+    /* flex-basis: 200px; */
+    /* flex: 2 5 100px; */
+    align-self: flex-start;
+
+}
+.item-2 {
+    background-color: #B95F21;
+    /* padding-bottom: 5rem; use for baseline */
+    /* flex-shrink: 4; */
+    align-self: flex-end;
+
+}
+.item-3 {
+    background-color: #1C4C56;
+    /* font-size: 3rem; use for baseline */
+    /* order: 1; */
+    align-self: center;
+
+}
+.item-4 {
+    background-color: #CFB276;
+    align-self: stretch;
+    /* align-self: auto; */
+
+}
+.item-5 {
+    background-color: #6B0803;
+    /* flex-grow: 0; default: 0 */
+    /* flex-grow: 1; */
+}
+.item-6 {
+    background-color: #1C4C56;
+    /* flex-grow: 3; */
+}
+.item-7 {
+    background-color: #B95F21;
+    /* order: 2; */
+}
+.item-8 {
+    background-color: #01243A;
+}
+.item-9 {
+    background-color: #AAD041;
+    /* order: 1; */
+}
