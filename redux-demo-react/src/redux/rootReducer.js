@@ -8,5 +8,5 @@ const rootReducer = combineReducers({
     iceCream: iceCreamReducer,
     user: userReducer
 })
-
+console.log("rootReducer =>",rootReducer);
 export default rootReducer

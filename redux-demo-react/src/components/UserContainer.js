@@ -3,6 +3,10 @@ import { connect } from 'react-redux'
 import { fetchUsers } from '../redux'
 
 function UserContainer({ userData, fetchUsers }) {
+
+    console.log("userData => ", userData);
+    console.log("fetchUsers => ", fetchUsers);
+
     useEffect(() => {
         fetchUsers()
     },[])
